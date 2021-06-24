@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9FE71B08E459504E901CEC53 /* Pods_cinnamonToast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C161E2776628B11C6E73F76B /* Pods_cinnamonToast.framework */; };
 		C1148DA02685120400E17BBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1148D9F2685120400E17BBF /* AppDelegate.swift */; };
 		C1148DA22685120400E17BBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1148DA12685120400E17BBF /* SceneDelegate.swift */; };
 		C1148DA42685120400E17BBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1148DA32685120400E17BBF /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4596C4EDE8085AF9C3F15FD3 /* Pods-cinnamonToast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cinnamonToast.release.xcconfig"; path = "Target Support Files/Pods-cinnamonToast/Pods-cinnamonToast.release.xcconfig"; sourceTree = "<group>"; };
 		C1148D9C2685120400E17BBF /* cinnamonToast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cinnamonToast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1148D9F2685120400E17BBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1148DA12685120400E17BBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		C1148DA82685120400E17BBF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C1148DAB2685120400E17BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1148DAD2685120400E17BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C161E2776628B11C6E73F76B /* Pods_cinnamonToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cinnamonToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD41AA590C985AB49B0D195B /* Pods-cinnamonToast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cinnamonToast.debug.xcconfig"; path = "Target Support Files/Pods-cinnamonToast/Pods-cinnamonToast.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE71B08E459504E901CEC53 /* Pods_cinnamonToast.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75F4F59A71F58D824969B69B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD41AA590C985AB49B0D195B /* Pods-cinnamonToast.debug.xcconfig */,
+				4596C4EDE8085AF9C3F15FD3 /* Pods-cinnamonToast.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C1148D932685120400E17BBF = {
 			isa = PBXGroup;
 			children = (
 				C1148D9E2685120400E17BBF /* cinnamonToast */,
 				C1148D9D2685120400E17BBF /* Products */,
+				75F4F59A71F58D824969B69B /* Pods */,
+				ED47C50C69468D54DCA9D438 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +92,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		ED47C50C69468D54DCA9D438 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C161E2776628B11C6E73F76B /* Pods_cinnamonToast.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1148DB02685120400E17BBF /* Build configuration list for PBXNativeTarget "cinnamonToast" */;
 			buildPhases = (
+				2996CE9CF1505788D199D491 /* [CP] Check Pods Manifest.lock */,
 				C1148D982685120400E17BBF /* Sources */,
 				C1148D992685120400E17BBF /* Frameworks */,
 				C1148D9A2685120400E17BBF /* Resources */,
+				711878FBA8839CF51CA1318A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2996CE9CF1505788D199D491 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cinnamonToast-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		711878FBA8839CF51CA1318A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cinnamonToast/Pods-cinnamonToast-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cinnamonToast/Pods-cinnamonToast-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cinnamonToast/Pods-cinnamonToast-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C1148D982685120400E17BBF /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		C1148DB12685120400E17BBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD41AA590C985AB49B0D195B /* Pods-cinnamonToast.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,6 +374,7 @@
 		};
 		C1148DB22685120400E17BBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4596C4EDE8085AF9C3F15FD3 /* Pods-cinnamonToast.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
